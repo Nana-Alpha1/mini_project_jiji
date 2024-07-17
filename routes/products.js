@@ -8,7 +8,7 @@ const router = express.Router()
 router.route('/').
 get(async(req,res)=>{
     // const data  =await pool.query('SELECT * FROM Products;');
-    const data = await Product.findById();
+    const data = await Product.find()
     
     // console.log(data[0])
     res.json(data)
