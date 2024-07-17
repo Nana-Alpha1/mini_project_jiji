@@ -54,7 +54,7 @@ function updateNumber(product_id,quantity){
 
 
  function delete_btn(product_id){
-    fetch('https://mini-project-jiji.onrender.com//carts/'+product_id,{
+    fetch('https://mini-project-jiji.onrender.com/carts/'+product_id,{
         method:'delete',
         headers: {
             'Content-Type': 'application/json'
